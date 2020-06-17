@@ -1,0 +1,283 @@
+/* google fonts */
+/* setup setting */
+html,
+body,
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topContentContainer
+{
+    width: 100%;
+    height: 100vh;
+}
+/* top navigation styling */
+#topNav
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+/* logo styling gos from here */
+.logo
+{
+    height: 100%;
+    width: 15%;
+}
+.logo img
+{
+    height: 100%;
+    width: 100%;
+}
+/* top list styling goes from here */
+
+ul.HAC
+{
+    width: 40%;
+    height: 100%;
+    text-align: center;
+}
+ul.HAC li
+{
+    list-style: none;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+ul.HAC li a
+{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(92, 91, 91);
+    padding: 0px 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+ul.HAC li::before
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+ul.HAC > li:hover::before
+{
+    transition: .5s;
+    background: #517DF0;
+}
+
+.acount
+{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login
+{
+    width: 100px;
+    background: transparent;
+    border: none;
+    color: #517DF0;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    cursor: pointer;
+}
+.signin
+{
+    width: 100px;
+    border: 1px solid #517DF0;
+    background: transparent;
+    height: 40px;
+    color: #517DF0;
+    font-size: 17px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* header styling goes from here */
+#header
+{
+    width: 100%;
+    height: 80%;
+    background-image: url(..//image/header_Background.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title
+{
+    width: 60%;
+    padding: 20px;
+}
+.title h1{
+    color: #517DF0;
+    font: 900;
+    letter-spacing: 5px;
+    line-height: 2;
+    font-size: 70px;
+    position: relative;
+}
+.title h1::before
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(rgb(34, 122, 255),rgb(151, 196, 247));
+    width: 200px;
+    height: 5px;
+    border-radius: 10px;
+    opacity: .5;
+}
+.title h1::after
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(rgb(34, 122, 255),rgb(151, 196, 247));
+    width: 5px;
+    height: 100px;
+    border-radius: 10px;
+    opacity: .5;
+}
+.title p
+{
+    width: 70%;
+    color: #363636;
+    line-height: 1.5;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+/* main navigation goes here */
+#mainNav
+{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+ul.mainNavUl
+{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+}
+ul.mainNavUl li
+{
+    list-style: none;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+}
+ul.mainNavUl li a
+{
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: rgb(92, 91, 91);
+    padding: 0px 20px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+#section
+{
+    width: 100%;
+    overflow: hidden;
+}
+
+.sectionOne
+{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionTwo
+{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #517DF0;
+}
+
+.sectionThree
+{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px solid #517DF0;
+}
+.sectionOne::before,
+.sectionTwo::before,
+.sectionThree::before
+{
+    content: "COMING SOON";
+    padding: 100px 200px;
+    background: #517ef0c9;
+    border-radius: 10px;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+
+
+footer
+{
+    width: 100%;
+    height: 50px;
+    background-color: #517DF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p
+{
+    color: rgb(223, 223, 223);
+    font-weight: 300;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
